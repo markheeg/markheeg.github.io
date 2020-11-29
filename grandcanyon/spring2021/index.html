@@ -1,31 +1,633 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Grand Canyon Trip - Spring 2021</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/carousel.css" rel="stylesheet">
+</head>
 <body>
-This is the Home Page for the Grand Canyon Trip for Spring 2021
-  
-Itenerary
-  <ul>
-    <li>Monday, 3/8/2021
-      <ul>
-          <li>Depart for Grand Canyon</li>
-      </ul>
-    </li>
-    <li>Tuesday, 3/9/2021
-      <ul>
-        <li>Hike from South Kaibab Trailhead to Bright Angel Campground</li>
-      </ul>
-    </li>
-    <li>Wednesday, 3/10/2021
-      <ul>
-        <li>Hike from Bright Angel Campground to Indian Garden Campground</li>
-      </ul>
-    </li>
-    <li>Thursday, 3/11/2021
-      <ul>
-        <li>Hike from Indian Garden Campground to Bright Angel Trailhead</li>
-        <li>Get Ice Cream at top</li>
-        <li>Head to Williams, AZ for Lunch</li>
-      </ul>
-    </li>
-  </ul>
-</body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navbar-inner">
+        <a class="ml-lg-5 navbar-brand" href="#">Grand Canyon Trip - Spring 2021</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+<!--                <li class="nav-item active">-->
+<!--                    <a class="nav-link" href="#">Home</a>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommended-trip-items">Packing List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommended-training">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#how-to-dress" tabindex="-1">How to Dress</a>
+                </li>
+            </ul>
+<!--            <form class="form-inline mt-2 mt-md-0">-->
+<!--                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+<!--                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--            </form>-->
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+
+<!--    <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+<!--        <ol class="carousel-indicators">-->
+<!--            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--            <li data-target="#myCarousel" data-slide-to="1"></li>-->
+<!--            <li data-target="#myCarousel" data-slide-to="2"></li>-->
+<!--        </ol>-->
+<!--        <div class="carousel-inner">-->
+<!--            <div class="carousel-item active">-->
+<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption text-left">-->
+<!--                        <h1>Example headline.</h1>-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption">-->
+<!--                        <h1>Another example headline.</h1>-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption text-right">-->
+<!--                        <h1>One more for good measure.</h1>-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">-->
+<!--            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--            <span class="sr-only">Previous</span>-->
+<!--        </a>-->
+<!--        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">-->
+<!--            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--            <span class="sr-only">Next</span>-->
+<!--        </a>-->
+<!--    </div>-->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing mt-5">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./assets/img/itinerary.png" style="border-radius: 50%;" height="140" width="140" />
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <h2>Itenerary</h2>
+                <div class="text-left">
+                    <dl>
+                        <dd style="margin-left: 0px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Sunrise: </span><span style="font-style: italic">6:50 am</span></dd>
+                        <dd style="margin-left: 0px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Sunset: </span><span style="font-style: italic">6:30 pm</span></dd>
+                        <dd style="margin-left: 0px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Moonrise: </span><span style="font-style: italic">6:45 pm, Full Moon on 3/9</span></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Sunday, 3/7/2021</span>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Pick up Rental Gear</span></dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Pack Backpacks</span></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Monday, 3/8/2021</span>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Drive to Grand Canyon</span></dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Go to Visitor Center to get update of Conditions</span></dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Check-in with Back Country Office to Update Permit</span></dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Get Lodging</span></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Tuesday, 3/9/2021</span>
+                        <dd style="margin-left: 10px;margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Hike South Kaibab Trail from South Rim to Bright Angel Campground</span>
+                            <dl style="margin-left: 20px;margin-top: 0px; margin-bottom: 0px;">
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Distance:</span> <span style="font-size: 10pt;">7 miles</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Start:</span> <span style="font-size: 10pt;">7260 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation End:</span> <span style="font-size: 10pt;">2480 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Drop:</span> <span style="font-size: 10pt;">4780 ft</span></dd>
+                            </dl>
+                        </dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Set-up Camp</span></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Wednesday, 3/10/2021</span>
+                        <dd style="margin-left: 10px;margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Hike Bright Angel Trail from Bright Angel Campground to Indian Garden Campground</span>
+                            <dl style="margin-left: 20px;margin-top: 0px; margin-bottom: 0px;">
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Distance:</span> <span style="font-size: 10pt;">4.7 miles</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Start:</span> <span style="font-size: 10pt;">2480 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation End:</span> <span style="font-size: 10pt;">3800 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Gain:</span> <span style="font-size: 10pt;">1320 ft</span></dd>
+                            </dl>
+                        </dd>
+                        <dd style="margin-left: 10px; margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Set-up Camp</span></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Thursday, 3/11/2021</span>
+                        <dd style="margin-left: 10px;margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Hike Bright Angel Trail from Indian Garden Campground to South Rim</span>
+                            <dl style="margin-left: 20px;margin-top: 0px; margin-bottom: 0px;">
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Distance:</span> <span style="font-size: 10pt;">4.3 miles</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Start:</span> <span style="font-size: 10pt;">3800 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation End:</span> <span style="font-size: 10pt;">6860 ft</span></dd>
+                                <dd style="margin: 0px;"><span style="font-style: italic; font-weight: bold; font-size: 10pt;" >Elevation Gain:</span> <span style="font-size: 10pt;">3060 ft</span></dd>
+                            </dl>
+                        </dd>
+                        <dd style="margin-left: 10px;"><span style="font-weight: 600; font-size: 11pt;" >Drive to Williams, AZ for Lunch</span></dd>
+                    </dl>
+
+<!--                    <ul style="list-style: none;">-->
+<!--                        <li><span style="font-weight: bold;">Thursday, 3/11/2021</span>-->
+<!--                            <ul>-->
+<!--                                <li>Hike out of Canyon from Indian Garden Campground to Bright Angel Trailhead (4.3 miles)</li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li style="margin-top: 5px;"><span style="font-weight: bold;">Tuesday, 3/9/2021</span>-->
+<!--                            <div style="font-weight: bold">Hike from South Kaibab Trailhead to Bright Angel Campground</div>-->
+<!--                            <div><span style="font-weight: bold;">Starting Elevation:</span> 7260 feet</div>-->
+<!--                            <div><span style="font-weight: bold;">Ending Elevation (at Bright Angel Campground):</span> 2480 feet</span></div>-->
+<!--                            <div><span style="font-weight: bold;">Elevation Drop:</span> 4780 feet</div>-->
+<!--                        </li>-->
+<!--                        <li style="margin-top: 5px;"><span style="font-weight: bold;">Wednesday, 3/10/2021</span>-->
+<!--                            <ul>-->
+<!--                                <li>Hike from Bright Angel Campground to Indian Garden Campground - 4.7 miles</li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li style="margin-top: 5px;"><span style="font-weight: bold;">Thursday, 3/11/2021</span>-->
+<!--                            <ul>-->
+<!--                                <li>Hike from Indian Garden Campground to Bright Angel Trailhead - 4.3 miles</li>-->
+<!--                                <li>Get Ice Cream at top</li>-->
+<!--                                <li>Head to Williams, AZ for Lunch</li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+                </div>
+<!--                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="./assets/img/hiker-prep.png" style="border-radius: 50%;" height="140" width="140" />
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <h2>Trip Prep</h2>
+                <div class="text-left">
+                    <dl><span style="font-weight: bold;">Training</span>
+                        <dd style="margin: 0px;"><div style="margin: 0px;" class="row"><div class="col-8 float-left" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px;"><a href="#recommended-training">Recommended Training</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row" style="margin-bottom: 0px;"><div class="col-8 float-left" style="margin-left: 10px; margin-bottom: 0px;">Exercise Guides</div></div>
+                            <dl style="margin-bottom: 0px;">
+                                <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 30px;"><a target="_blank" href="https://www.oars.com/files/GC_Hiker_Training.pdf" rel="nofollow noopener noreferrer">OARS Training Guide</a></div></div> </dd>
+                                <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 30px;"><a target="_blank" href="https://www.gore-tex.com/blog/train-grand-canyon-hike" rel="nofollow noopener noreferrer">GORE-TEX Training Guide</a></div></div> </dd>
+                            </dl>
+                        </dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Packing List</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#recommended-trip-items">Recommended Packing List</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.rei.com/dam/backpacking_checklist_printable.pdf" rel="nofollow noopener noreferrer">REI Backpacking Checklist</a></div></div> </dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Gear Rental</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.rei.com/rentals" rel="nofollow noopener noreferrer">REI</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.hikingshack.com/" rel="nofollow noopener noreferrer">Arizona Hiking Shack</a></div></div> </dd>
+                    </dl>
+
+                    <!--                    <dl><span style="font-weight: bold;">Gear</span>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/learn/photosmultimedia/bc_videocast.htm">Boots</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/hike-tips.htm">Backpack</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/conditions.htm">Stove</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/trail-closures.htm">Trail Closures &amp; Water Status</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/campsite-information.htm">Back Country Trails &amp; Use Areas</a></div></div> </dd>-->
+<!--                    </dl>-->
+
+<!--                    <dl><span style="font-weight: bold;">Clothing</span>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/learn/photosmultimedia/bc_videocast.htm">Back Country Videos</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/hike-tips.htm">Hiking Tips</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/conditions.htm">Alerts &amp; Conditions</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/trail-closures.htm">Trail Closures &amp; Water Status</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/campsite-information.htm">Back Country Trails &amp; Use Areas</a></div></div> </dd>-->
+<!--                    </dl>-->
+
+<!--                    <dl><span style="font-weight: bold;">Food</span>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/learn/photosmultimedia/bc_videocast.htm">Back Country Videos</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/hike-tips.htm">Hiking Tips</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/conditions.htm">Alerts &amp; Conditions</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/trail-closures.htm">Trail Closures &amp; Water Status</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/campsite-information.htm">Back Country Trails &amp; Use Areas</a></div></div> </dd>-->
+<!--                    </dl>-->
+
+                    <dl><span style="font-weight: bold;">On-The-Trail</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#how-to-dress">How to Dress</a></div></div> </dd>
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#staying-hydrated">Staying Hydrated</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#how-much-should-i-eat">How Much Should I Eat?</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#how-heavy-should-my-pack-be">How Heavy Should My Pack Be?</a></div></div> </dd>-->
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a href="#should-i-use-trekking-poles">Should I Use Trekking Poles?</a></div></div> </dd>-->
+                    </dl>
+
+<!--                    <ul>-->
+<!--&lt;!&ndash;                        <li>Permit</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <li>Lodging / Camping</li>&ndash;&gt;-->
+<!--                        <li>Training</li>-->
+<!--                        <li>Gear</li>-->
+<!--                        <li>Clothing</li>-->
+<!--                        <li>Food</li>-->
+<!--                        <li>Water</li>-->
+<!--                        <li>Water</li>-->
+<!--                    </ul>-->
+                </div>
+<!--                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="./assets/img/resources.png" style="border-radius: 50%;" height="140" width="140" />
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+                <h2>Resources</h2>
+                <div class="text-left">
+                    <dl><span style="font-weight: bold;">Grand Canyon National Park</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/learn/photosmultimedia/bc_videocast.htm" rel="nofollow noopener noreferrer">Back Country Videos</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/hike-tips.htm" rel="nofollow noopener noreferrer">Hiking Tips</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/conditions.htm" rel="nofollow noopener noreferrer">Alerts &amp; Conditions</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/trail-closures.htm" rel="nofollow noopener noreferrer">Trail Closures &amp; Water Status</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/campsite-information.htm" rel="nofollow noopener noreferrer">Back Country Trails &amp; Use Areas</a></div></div> </dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Weather</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/sunrise_set_moon.htm" rel="nofollow noopener noreferrer">Sunrise, Sunset and Moon Phases</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=36.057&lon=-112.1368#.X6xXBOaSmUl" rel="nofollow noopener noreferrer">South Rim Weather</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=36.104&lon=-112.0958#.X6xXXOaSmUl" rel="nofollow noopener noreferrer">Phantom Ranch Weather</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://forecast.weather.gov/MapClick.php?lon=-112.12695837020875&lat=36.079418831501854#.X6xYj-aSmUk" rel="nofollow noopener noreferrer">Indian Garden Weather</a></div></div> </dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">How-To Guides</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.outdoorgearlab.com/expert-advice/introduction-to-layered-clothing-systems" rel="nofollow noopener noreferrer">Dress in Layers</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.rei.com/learn/expert-advice/lacing-hiking-boots.html" rel="nofollow noopener noreferrer">How to Lace Hiking Boots</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.rei.com/learn/expert-advice/loading-backpack.html" rel="nofollow noopener noreferrer">How to Pack and Hoist a Backpack</a></div></div> </dd>
+<!--                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.backpacker.com/skills/how-to-pack-a-backpack">How to Pack your Backpack</a></div></div> </dd>-->
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.outsidepursuits.com/beginners-guide-to-hiking-poles/" rel="nofollow noopener noreferrer">How to use Trekking Poles</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.rei.com/learn/expert-advice/tent-set-up.html" rel="nofollow noopener noreferrer">How to Setup a Tent</a></div></div> </dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Literature</span>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-1">Book:</div><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.amazon.com/Hiking-Grand-Canyon-National-Park/dp/149304656X/ref=sr_1_11?dchild=1&keywords=grand+canyon+backpacking&qid=1605128783&sr=8-11" rel="nofollow noopener noreferrer">Hiking Grand Canyon National Park: A Guide to the Best Hiking Adventures on the North and South Rims (Regional Hiking Series)</a></div></div> </dd>
+                        <dd style="margin: 0px;"><div class="row"><div class="col-1">Map:</div><div class="col-8 float-left" style="margin-left: 10px;"><a target="_blank" href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A05833673Q3TJKDPK1PCK&url=%2FGrand-Canyon-Trail-Map-5th%2Fdp%2F0966550846%2Fref%3Dsr_1_4_sspa%3Fdchild%3D1%26keywords%3Dgrand%2Bcanyon%2Bbackpacking%26qid%3D1605128783%26sr%3D8-4-spons%26psc%3D1&qualifier=1605128782&id=4067589300260341&widgetName=sp_atf" rel="nofollow noopener noreferrer">Grand Canyon Trail Map 7th Edition</a></div></div></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Full Hike Video (30:00)</span>
+                        <dd style="margin: 0px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/tQ6SM9NoVNA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></dd>
+                    </dl>
+
+                    <dl><span style="font-weight: bold;">Trails</span>
+                        <dd style="margin-left: 10px;margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >South Kaibab Trail</span> - <a target="_blank" href="https://www.nps.gov/grca/planyourvisit/upload/South_Kaibab_Trail.pdf" rel="nofollow noopener noreferrer">NPS Trail Info</a>
+                            <iframe style="margin-left: 25px;" class="alltrails" src="https://www.alltrails.com/widget/map/south-kaibab-to-bright-angel-c5a8c45?elevationDiagram=false&hideName=true&u=i" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+<!--                            <dl style="margin-left: 20px;margin-top: 0px; margin-bottom: 0px;">-->
+<!--                                <dd style="margin: 0px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/upload/South_Kaibab_Trail.pdf">Trail Info</a></dd>-->
+<!--                            </dl>-->
+                        </dd>
+                        <dd style="margin-left: 10px;margin-top: 0px; margin-bottom: 0px;"><span style="font-weight: 600; font-size: 11pt;" >Bright Angel Trail</span> - <a target="_blank" href="https://www.nps.gov/grca/planyourvisit/upload/Bright_Angel_Trail.pdf" rel="nofollow noopener noreferrer">NPS Trail Info</a>
+                            <iframe style="margin-left: 25px;" class="alltrails" src="https://www.alltrails.com/widget/map/bright-angel-camp-to-grand-canyon-village-788d986?elevationDiagram=false&hideName=true&u=i" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+<!--                            <dl style="margin-left: 20px;margin-top: 0px; margin-bottom: 0px;">-->
+<!--                                <dd style="margin: 0px;"><a target="_blank" href="https://www.nps.gov/grca/planyourvisit/upload/Bright_Angel_Trail.pdf">Trail Info</a></dd>-->
+<!--                            </dl>-->
+                        </dd>
+                    </dl>
+                </div>
+<!--                        <li>Videos</li>-->
+<!--                        <li>Grand Canyon</li>-->
+<!--                        <li>Books</li>-->
+<!--                        <li>Checklist</li>-->
+<!--                    </dl>-->
+<!--                </div>-->
+<!--                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr id="recommended-trip-items" class="featurette-divider">
+
+        <div class="row featurette">
+            <h2 class="">Recommended Packing List</h2>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <h5>Individual Items</h5>
+                <ul>
+                    <li>Gear
+                        <ul>
+                            <li>Backpack</li>
+                            <li>Tent - if possible, share tent and separate into multiple backpacks</li>
+                            <li>Sleeping Bag</li>
+                            <li>Sleeping Pad</li>
+                            <li>Sunglasses</li>
+                            <li>Headlamp</li>
+                            <li>Hiking Poles</li>
+                            <li>Ziploc Bags
+                                <ul>
+                                    <li>2 gal bags - used for trash, food, clothes</li>
+                                    <li>1 gal bags - used for toiletries</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Hygiene
+                        <ul>
+                            <li>Toilet Paper</li>
+                            <li>Hand Sanitizer</li>
+                            <li>Small Shovel - if no bathroom is available</li>
+                        </ul>
+                    </li>
+                    <li>Water
+                        <ul>
+                            <li>Water Reservoir - either 2 or 3 liter</li>
+                            <li>Nalgene Bottle - 1 Liter</li>
+                            <li>Electrolyte Powder or Tablets</li>
+                        </ul>
+                    </li>
+                    <li>Food
+                        <ul>
+                            <li>Breakfast and Dinner
+                                <ul>
+                                    <li>Backpacker's Pantry</li>
+                                    <li>Mountain House</li>
+                                    <li>Oatmeal</li>
+                                </ul>
+                            </li>
+                            <li>Lunch
+                                <ul>
+                                    <li>Tuna/Salmon/Chicken and Crackers</li>
+                                    <li>Apple and Peanut Butter</li>
+                                </ul>
+                            </li>
+                            <li>Snacks
+                                <ul>
+                                    <li>Energy bars</li>
+                                    <li>Beef Jerky</li>
+                                    <li>Fruit Leather</li>
+                                    <li>Trail Mix</li>
+                                    <li>Raisins and Nuts</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Clothing &amp; Footwear
+                        <ul>
+                            <li>Wide Brim Hat</li>
+                            <li>Hiking Boots</li>
+                            <li>Shoes or Flip Flops - to wear around Camp</li>
+                            <li>Hiking Socks - 2 pairs</li>
+                            <li>Liner Socks - 2 pairs</li>
+                            <li>Underwear</li>
+                            <li>Hiking Pants - zip off legs</li>
+                            <li>Lightweight Jacket</li>
+                            <li>Long Sleeve Shirt</li>
+                            <li>Short Sleeve Shirt</li>
+                            <li>Rain Gear</li>
+                        </ul>
+                    </li>
+<!--                    <li><a href="https://amzn.to/2IkCwD8" target="_blank" rel="nofollow noopener noreferrer">Iodine tablets</a></li>-->
+<!--                    <li><a href="https://amzn.to/2KTpaj1" target="_blank" rel="nofollow noopener noreferrer">Trioral Oral Rehydration Salts</a></li>-->
+<!--                    <li><a href="https://amzn.to/2KUBMGs" target="_blank" rel="nofollow noopener noreferrer">Salt Stick Caps</a></li>-->
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <h5>Shared Group Items</h5>
+                <ul>
+                    <li>Gear
+                        <ul>
+                            <li>First Aid Kit</li>
+                            <li>Sunscreen</li>
+                            <li>Small Swiss Army Knife</li>
+                            <li>Paracord</li>
+                            <li>Bear Bags
+                                <ul>
+                                    <li>Mesh Laundry Bag</li>
+                                    <li>Ratsack / Ursack</li>
+                                </ul>
+                            </li>
+                            <li>GPS</li>
+                            <li>Emergency Beacon</li>
+                        </ul>
+                    </li>
+<!--                    <li><a href="https://amzn.to/2KTU6j0" target="_blank" rel="nofollow noopener noreferrer">Garmin GPS</a></li>-->
+<!--                    <li>Cell Phones</li>-->
+                    <li>Cooking
+                        <ul>
+                            <li><a href="" target="_blank" rel="nofollow noopener noreferrer">Stove</a></li>
+                            <li><a href="" target="_blank" rel="nofollow noopener noreferrer">Cooking Fuel</a></li>
+                            <li><a href="" target="_blank" rel="nofollow noopener noreferrer">Cooking Pot</a></li>
+                        </ul>
+                    </li>
+                    <li>Water
+                        <ul>
+                            <li><a href="https://amzn.to/2KUfHb8" target="_blank" rel="nofollow noopener noreferrer">Katadyn Water Filter</a></li>
+                            <li><a href="https://amzn.to/2IkCwD8" target="_blank" rel="nofollow noopener noreferrer">Iodine tablets</a></li>
+                            <li><a href="https://amzn.to/2KTpaj1" target="_blank" rel="nofollow noopener noreferrer">Trioral Oral Rehydration Salts</a></li>
+                        </ul>
+                    </li>
+
+
+<!--                    <li>Food: energy bars, beef jerky, pretzels, chips, trail mix, raisins</li>-->
+<!--                    <li>Water in a 3 liter Camelback reservoir</li>-->
+<!--                    <li>First Aid Kit</li>-->
+<!--                    <li><a href="https://amzn.to/2KkiIlJ" target="_blank" rel="nofollow noopener noreferrer">2 Petzl Headlamps</a></li>-->
+<!--                    <li>Cell phones (we only had service on the final 4 miles of the Bright Angel Trail)</li>-->
+<!--                    <li><a href="https://amzn.to/2KTU6j0" target="_blank" rel="nofollow noopener noreferrer">Garmin GPS</a></li>-->
+<!--                    <li><a href="https://amzn.to/2FdXscY" target="_blank" rel="nofollow noopener noreferrer">Hiking Poles</a></li>-->
+<!--                    <li>Sunglasses</li>-->
+<!--                    <li>Hat/Visor</li>-->
+<!--                    <li>Lightweight Jacket</li>-->
+<!--                    <li><a href="https://amzn.to/31ALxj8" target="_blank" rel="nofollow noopener noreferrer">Canon 5D Mark IV camera</a> on a <a href="https://amzn.to/31DdUwU" target="_blank" rel="nofollow noopener noreferrer">cross-body strap</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <hr id="recommended-training" class="featurette-divider">
+
+        <div class="row featurette">
+            <h2 class="">Training</h2>
+            <div>
+                <p>Training for the Grand Canyon is important as being in good shape allows you to safely hike the canyon
+                    for a much more enjoyable experience.<br/><br/>
+
+                    Get out and start walking as much as you can. The trip will be here before you know it.<br/>
+                    Over the last month or two before the trip, increase your exercise. <br/>
+                    If you can, try and incorporate hills or stadium bleachers into your routine.<br/>
+                    <br/>
+                    Also, if possible wear your pack every couple of weeks so you get used to carrying the weight and adjusting
+                    it.
+                </p>
+            </div>
+        </div>
+
+        <hr id="how-to-dress" class="featurette-divider">
+
+        <div class="row featurette">
+            <h2 class="">How to Dress</h2>
+            <div>
+                <div>It is recommended that you dress in layers so that you can adjust your comfort level as you hike by
+                    removing or adding clothing as you need. Also, it is about 20&#176; cooler at the top of the Canyon than it
+                    is at the bottom, so you will be heating up as you descend into the Canyon.
+                    <br/><br/>
+
+                    I recommend wearing the following when you start the descent into the Canyon
+                    <ul>
+                        <li>Layers
+                            <ul>
+                                <li>Base Layer - Long Sleeve Shirt, Wool Recommended</li>
+                                <li>Mid Layer - Light Fleece or Thick Wool</li>
+                                <li>Protective Layer - Lightweight Insulated Jacket</li>
+                            </ul>
+                        </li>
+                        <li>Hiking Pants with zip off legs</li>
+                        <li>Optional Items (based on weather)
+                            <ul>
+                                <li>Knit Cap</li>
+                                <li>Gloves</li>
+                                <li>Long Underwear</li>
+                                <li>Rain Jacket</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+                <div>
+                    <span style="border-bottom-width: 1px; border-bottom-style: solid;">Top of the Canyon Weather</span> (20&#176; cooler than the bottom) <br/><br/>
+                    <div style="margin-left: 40px;">
+                        <img src="./assets/img/grand-canyon-temps.png"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <span style="border-bottom-width: 1px; border-bottom-style: solid;">Bottom of the Canyon Weather</span> <br/><br/>
+                    <div style="margin-left: 40px;">
+                        <img src="./assets/img/phantom-ranch-temps.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        <hr id="staying-hydrated" class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <h2 class="">Staying Hydrated</h2>-->
+<!--            <div>-->
+<!--                <p>Water and electrolytes are important when hiking in the Canyon so you'll want to know what to expect-->
+<!--                    with regards to water sources for the trip.<br/>-->
+<!--                    <br/>-->
+<!--                    We'll be heading down the South Kaibab trail from the Rim to the Colorado River. There is no water along-->
+<!--                    the trail until we get to the river, which is about 7 miles. This will be the longest part of the trip -->
+<!--                    without a way to replenish your water supply. I would load up with 3 liters of water before we head -->
+<!--                    down.-->
+<!--                    <br/><br/>-->
+
+<!--                    We-->
+
+
+<!--                    For this trip, you will want to make sure you carry enough water to get down South Kaibab Trail to the-->
+<!--                    River because there are no water sources along the trail until you reach the Colorado River.-->
+<!--                    South Kaibab Trail - there are no You <br/><br/>-->
+
+<!--                    Over the last month or two before the trip, get out and walk as much as you can. <br/>-->
+<!--                    If you can, try and incorporate hills or stadium bleachers into your routine.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr id="how-much-should-i-eat" class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <h2 class="">How Much Should I Eat?</h2>-->
+<!--            <div>-->
+<!--                <p>Training for the Grand Canyon is important as being in good shape allows you to safely hike the canyon-->
+<!--                    for a much more enjoyable experience.<br/><br/>-->
+
+<!--                    Over the last month or two before the trip, get out and walk as much as you can. <br/>-->
+<!--                    If you can, try and incorporate hills or stadium bleachers into your routine.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr id="how-heavy-should-my-pack-be" class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <h2 class="">How Heavy Should My Pack Be?</h2>-->
+<!--            <div>-->
+<!--                <p>Training for the Grand Canyon is important as being in good shape allows you to safely hike the canyon-->
+<!--                    for a much more enjoyable experience.<br/><br/>-->
+
+<!--                    Over the last month or two before the trip, get out and walk as much as you can. <br/>-->
+<!--                    If you can, try and incorporate hills or stadium bleachers into your routine.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr id="should-i-use-trekking-poles" class="featurette-divider">-->
+
+<!--        <div class="row featurette">-->
+<!--            <h2 class="">Should I Use Trekking Poles?</h2>-->
+<!--            <div>-->
+<!--                <p>Training for the Grand Canyon is important as being in good shape allows you to safely hike the canyon-->
+<!--                    for a much more enjoyable experience.<br/><br/>-->
+
+<!--                    Over the last month or two before the trip, get out and walk as much as you can. <br/>-->
+<!--                    If you can, try and incorporate hills or stadium bleachers into your routine.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <hr class="featurette-divider">-->
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020-2021 HeegCellent Adventures, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>
